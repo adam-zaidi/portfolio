@@ -1,0 +1,225 @@
+*, html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: #fffaf1;
+  font-family: menlo;
+}
+
+.header {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  text-align: center;
+}
+
+.title-container {
+  width: 50%;
+  height: 100%;
+  background-color: #dddcd2;
+  float: left;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.5;
+  padding-bottom: 30px;
+  color: #2E3434;
+}
+
+.body {
+  font-family: menlo;
+  justify-content: center;
+/*   display: block; */
+  display: flex;
+}
+
+.main-text {
+  width: 48%;
+}
+
+
+.title-image {
+  width:100%;
+  height: 100%;
+/*   object-fit: cover; */
+  object-position: 50% 50%;
+  z-index: 0;
+  display: absolute;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: menlo;
+  font-size: 80px;
+  font-weight: bolder;
+  color: white;
+  width: 100%
+}
+
+.date {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: menlo;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  width: 100%;
+}
+
+.source {
+  font-family: menlo;
+  font-size: 15px;
+  font-style: italic;
+  height: 40px;
+  width: 50%;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.navbar-container {
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+
+.navbar {
+  display: relative;
+  align-items: center;
+  width: 80px;
+}
+
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+
+:root{
+  --pseudo-backgroundcolor: #fffaf1;
+  --pseudo-color: #fffaf1;
+}
+
+.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible; }
+  .hamburger:hover {
+    opacity: 0.7; }
+  .hamburger.is-active:hover {
+    opacity: 0.7; }
+
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative; }
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px; 
+}
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    transition: all 0.5s;
+    background-color: var(--pseudo-backgroundcolor);
+    width: 40px;
+    height: 4px;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease; 
+  }
+  .hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block; }
+  .hamburger-inner::before {
+    top: -10px; }
+  .hamburger-inner::after {
+    bottom: -10px; }
+
+/*
+   * Spin
+   */
+.hamburger--spin .hamburger-inner {
+  transition-duration: 0.22s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  .hamburger--spin .hamburger-inner::before {
+    transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in; }
+  .hamburger--spin .hamburger-inner::after {
+    transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+.hamburger--spin.is-active .hamburger-inner {
+  transform: rotate(225deg);
+  transition-delay: 0.12s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  .hamburger--spin.is-active .hamburger-inner::before {
+    top: 0;
+    opacity: 0;
+    transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out; }
+  .hamburger--spin.is-active .hamburger-inner::after {
+    bottom: 0;
+    transform: rotate(-90deg);
+    transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+#navbar-list {
+  list-style-type: none;
+  padding-left: 20px;
+  text-align: left;
+  display: none;
+  font-family: menlo;
+}
+
+.navbar-link {
+  position: relative;
+  color: var(--pseudo-color);
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.navbar-link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: var(--pseudo-color);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+
+.navbar-link:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}

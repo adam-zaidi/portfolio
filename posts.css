@@ -1,0 +1,143 @@
+*, html, body {
+   margin: 0;
+   padding: 0;
+  /* overflow: hidden; */
+}
+
+@font-face { font-family: Terminal; src: url('images/EpsonMxSeriesDmp-ZVRG8.ttf'); } 
+
+@media only screen and (orientation: portrait) {
+  .header {
+    width: 100vw !important;
+  }
+  .body {
+    width: 100vw !important;
+  }
+  .post-link {
+    font-size: 20px !important;
+    word-wrap: normal;
+    width: 100vw !important;
+  }
+  .date-text {
+    font-size: 20px !important;
+  }
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  color: #33ff00;
+  font-family: Terminal;
+  background-color: #282828;
+}
+
+.header {
+  margin: 20px;
+  margin-top: 0px;
+  padding: 0px;
+  justify-content: left;
+  text-align: left;
+  width: 960px;
+  height: 120px;
+  margin-bottom: 0px;
+}
+
+.body {
+  margin-left: 20px;
+  margin-top: 0px;
+  padding: 0px;
+  justify-content: left;
+  text-align: left;
+  height: 100%;
+  width: 960px;
+}
+
+.footnote-buffer {
+  height: 21px;
+}
+
+.title-name {
+  font-family: courier new,Courier,monospace;
+  line-height: 14px;
+  font-size: 14px;
+  display: inline-block;
+  letter-spacing: -.5px;
+  padding-top: 0px;
+}
+
+.home-link {
+  float: right;
+  font-size: 20px;
+  text-decoration-line: underline;
+  text-decoration-color: #33ff00;
+}
+
+.home-link:hover a {
+  color: #000000;
+  background-color: #33ff00;
+}
+
+
+.container {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0px;
+  background-color: #282828;
+  
+}
+
+h1 {
+  padding: none;
+  font-size: 20px;
+  color: #FFb000;
+}
+
+.name-title {
+  display: flex;
+  padding: none;
+  margin: none;
+  position: relative;
+}
+
+
+p {
+  padding: none;
+  font-size: 20px;
+}
+
+a {
+  color: #33ff00;
+  text-decoration-line: none;
+}
+
+
+.name-title {
+  display: flex;
+  padding: none;
+  margin: none;
+  position: relative;
+}
+
+.post-link {
+  font-size: 20px;
+  text-decoration-line: underline;
+  /* text-decoration-style: dotted; */
+  text-decoration-color: #33ff00;
+  margin-left: 10px;
+  height: 21px;
+}
+
+.post-link:hover {
+  background-color: #33ff00;
+  color: #000000;
+}
+
+.date-text {
+  font-size: 20px;
+  padding-left: 20px;
+  padding-top: 5px;
+  color: #FFb000;
+}
+

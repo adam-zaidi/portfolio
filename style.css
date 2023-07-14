@@ -1,0 +1,144 @@
+*, html, body {
+   margin: 0;
+   padding: 0;
+  /* overflow: scroll; */
+}
+
+ @font-face { font-family: Terminal; src: url('images/EpsonMxSeriesDmp-ZVRG8.ttf'); } 
+
+@media only screen and (orientation: portrait) {
+  .container {
+    width: 100vw !important;
+  }
+  /* .header {
+    height: 220px !important;
+  } */
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  color: #33ff00;
+  font-family: Terminal;
+  background-color: #282828;
+}
+
+.header {
+  margin: 20px;
+  margin-top: 0px;
+  padding: 0px;
+  justify-content: left;
+  text-align: left;
+  height: 120px;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+.body {
+  margin-left: 20px;
+  margin-top: 0px;
+  padding: 0px;
+  justify-content: left;
+  text-align: left;
+  height: 100%;
+  width: 100%;
+}
+
+.title-name {
+  font-family: courier new,Courier,monospace;
+  line-height: 14px;
+  font-size: 14px;
+  display: inline-block;
+  letter-spacing: -.5px;
+  padding-top: 0px;
+  padding-right: 20px;
+}
+
+
+.container {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0px;
+  background-color: #282828;
+  height: 100%;
+  width: 960px;
+}
+
+h1 {
+  padding: none;
+  font-size: 20px;
+  color: #FFb000;
+}
+
+.name-title {
+  display: flex;
+  padding: none;
+  margin: none;
+  position: relative;
+}
+
+.title-space {
+  width: 10px;
+}
+
+
+p {
+  padding: none;
+  font-size: 20px;
+  /* text-size-adjust: 90%; */
+  /* overflow-wrap: break-word; */
+}
+
+ul {
+  padding: 20px;
+  font-size: 20px;
+  list-style-type: square;
+}
+
+ul.special_bullet li:before {
+color: #000;
+content: "\27bd \0020";
+}
+
+li {
+  padding: 5px;
+}
+
+.title-link {
+  color: #33ff00;
+  text-decoration-line: none;
+  text-decoration-color: #33ff00;
+}
+
+.main-link {
+  font-size: 20px;
+  color: #33ff00;
+  text-decoration-line: underline;
+  text-decoration-color: #33ff00;
+}
+
+.main-link:hover {
+  background-color: #33ff00;
+  color: #000000;
+}
+
+.super {
+  vertical-align: super;
+  transform: translate(0px,-5px);
+  font-size: 13px;
+  color: #FFCC00;
+}
+
+.footnote {
+  padding-left: 20px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin: 0px;
+  font-size: 15px;
+}
+
+.footnote-text {
+  font-size: 15px;
+}
