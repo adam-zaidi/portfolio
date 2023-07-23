@@ -4,6 +4,14 @@
   /* overflow: hidden; */
 }
 
+@media only screen and (orientation: portrait) {
+  span {
+    line-height: 6px !important;
+    font-size: 6px !important;
+    letter-spacing: -.5px !important;
+  }
+}
+
 @font-face { font-family: Terminal; src: url('images/EpsonMxSeriesDmp-ZVRG8.ttf'); } 
 
 body {
@@ -18,7 +26,8 @@ body {
 
 .wrapper {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
+  position: fixed;
 }
 
 .centered {
