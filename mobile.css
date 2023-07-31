@@ -1,0 +1,35 @@
+@media only screen and (orientation: portrait) {
+  html, body {
+    overflow-x: hidden;
+    position: fixed;
+  }
+  html {
+    max-width: 100% !important;
+  }
+  body {
+    /* position: absolute !important; */
+    width: 100vw !important;
+  }
+  .container {
+    width: 90vw !important;
+    max-width:100% !important;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  span {
+    line-height: 8px !important;
+    font-size: 8px !important;
+    letter-spacing: -0.5px !important;
+  }
+  .line {
+    display: none !important;
+  }
+  .line-mobile {
+    display: inline !important;
+  }
+}
+
+.line-mobile {
+  display: none;
+}
