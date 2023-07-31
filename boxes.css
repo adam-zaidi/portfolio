@@ -61,12 +61,12 @@
 /* BOX #3 */
 
 
-#about-me:hover #box3 h1:after {
+.about-me:hover #box3 h1:after {
   visibility: visible;
   animation: cursor-blink 1s steps(2, start) infinite;
 }
 
-#huevo:hover ~ #about-me #box3 h1:after {
+#huevo:hover ~h .about-me #box3 h1:after {
   visibility: visible;
   animation: cursor-blink 1s steps(2, start) infinite;
 }
