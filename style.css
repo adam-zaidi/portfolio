@@ -7,12 +7,32 @@
  @font-face { font-family: Terminal; src: url('images/EpsonMxSeriesDmp-ZVRG8.ttf'); } 
 
 @media only screen and (orientation: portrait) {
-  .container {
-    width: 100vw !important;
+  .html {
+    max-width: 100%;
   }
-  /* .header {
-    height: 220px !important;
-  } */
+  .container {
+    width: 90dvw !important;
+    max-width:100%;
+  }
+}
+
+#testy {
+  width: 100vw;
+  background-color: red;
+}
+
+@media only screen and (max-width: 630px) {
+  span {
+    line-height: 8px !important;
+    font-size: 8px !important;
+    letter-spacing: -0.5px !important;
+  }
+  #line {
+    display: none !important;
+  }
+  #line-mobile {
+    display: inline !important;
+  }
 }
 
 body {
@@ -81,6 +101,10 @@ h1 {
 
 .title-space {
   width: 10px;
+}
+
+#line-mobile {
+  display: none;
 }
 
 
