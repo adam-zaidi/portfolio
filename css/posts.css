@@ -1,37 +1,12 @@
 *, html, body {
-   margin: 0;
-   padding: 0;
+  margin: 0;
+  padding: 0;
+  /* overflow: scroll; */
 }
 
-@font-face { font-family: Terminal; src: url('EpsonMxSeriesDmp-ZVRG8.ttf'); } 
+ @font-face { font-family: Terminal; src: url('fonts/EpsonMxSeriesDmp-ZVRG8.ttf'); } 
 
-@media only screen and (orientation: portrait) {
-  .header {
-    width: 90vw !important;
-  }
-  .body {
-    width: 90vw !important;
-  }
-  .post-link {
-    font-size: 20px !important;
-    /* word-wrap: normal; */
-    height: 100%;
-  }
-  .date-text {
-    font-size: 20px !important;
-    /* padding-top: 20px !important; */
-  }
-  .post-box {
-    line-height: 20px !important;
-    /* margin-bottom: 20px !important; */
-  }
-  .line-link {
-    width: 90vw !important;
-  }
-  .carrot {
-  font-size: 20px !important;
-}
-}
+@font-face { font-family: Intro; src: url(fonts/IntroDemoCond-LightCAPS.ttf); }
 
 body {
   margin: 0px;
@@ -43,128 +18,58 @@ body {
   background-color: #282828;
 }
 
-.header {
+h1 {
   margin: 20px;
-  margin-top: 0px;
-  padding: 0px;
-  justify-content: left;
-  text-align: left;
-  width: 960px;
-  height: 120px;
-  margin-bottom: 0px;
+  font-size: 40px;
+}
+
+.date {
+  font-size: 20px;
+  color: #FFCC00;
+}
+
+.container {
+  width: 100vw;
+  text-align: center;
+}
+
+.header {
+  width: 700px;
+  display: inline-block;
+  height: 100%;
+}
+
+.line {
+  width: 100%;
+  display: inline-block;
+  padding-top: 20px;
 }
 
 .body {
-  margin-left: 20px;
-  margin-top: 0px;
-  padding: 0px;
-  justify-content: left;
-  text-align: left;
-  height: 100%;
-  width: 960px;
-}
-
-.footnote-buffer {
-  height: 21px;
-}
-
-.title-name {
-  font-family: courier new,Courier,monospace;
-  line-height: 14px;
-  font-size: 14px;
+  width: 700px;
   display: inline-block;
-  letter-spacing: -.5px;
-  padding-top: 0px;
-  text-shadow:
-      0 0 7px #0fa,
-      0 0 10px #0fa;
-      /* 0 0 21px #0fa; */
-      /* 0 0 42px #0fa,
-      0 0 82px #0fa,
-      0 0 92px #0fa,
-      0 0 102px #0fa,
-      0 0 151px #0fa; */
 }
 
-.line-link {
-  width: 400px;
+.body-paragraph {
+  font-size: 1.25rem;
+  font-family: "Lucida Console", "Courier New", monospace;
+  margin: 20px;
+  text-align: left;
 }
 
-.home-link {
-  float: right;
-  font-size: 20px;
-  text-decoration-line: underline;
-  text-decoration-color: #33ff00;
-}
-
-.home-link:hover a {
-  color: #000000;
-  background-color: #33ff00;
-}
-
-
-.container {
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0px;
-  background-color: #282828;
-  
-}
-
-h1 {
-  padding: none;
-  font-size: 20px;
-  color: #FFb000;
-}
-
-.name-title {
-  display: flex;
-  padding: none;
-  margin: none;
-  position: relative;
-}
-
-
-p {
-  padding: none;
-  font-size: 20px;
-}
-
-a {
-  color: #33ff00;
-  text-decoration-line: none;
-}
-
-
-.name-title {
-  display: flex;
-  padding: none;
-  margin: none;
-  position: relative;
-}
-
-.carrot {
-  font-size: 20px;
-}
-
-.post-link {
-  font-size: 20px;
-  text-decoration-line: underline;
-  /* text-decoration-style: dotted; */
-  text-decoration-color: #33ff00;
-  margin-left: 10px;
-  height: 100%;
-}
-
-.post-link:hover {
-  background-color: #33ff00;
-  color: #000000;
-}
-
-.date-text {
-  font-size: 20px;
+.footy {
+  float: left;
   padding-left: 20px;
-  padding-top: 5px;
-  color: #FFb000;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  font-display: italic;
 }
 
+.footy a {
+  text-decoration: none;
+  color: #33ff00;
+}
+
+.footy a:hover {
+  text-decoration: underline;
+}
