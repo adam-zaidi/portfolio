@@ -2,6 +2,7 @@
   html, body {
     overflow-x: hidden;
     position: fixed;
+    background-color: #282828;
   }
   html {
     max-width: 100% !important;
@@ -10,10 +11,39 @@
     /* position: absolute !important; */
     width: 100vw !important;
   }
-  .container {
+  .header {
     width: 90vw !important;
+  }
+  .body {
+    width: 90vw !important;
+  }
+  .container {
+    width: 100vw !important;
     max-width:100% !important;
   }
+  img,iframe {
+    width: 80vw !important;
+    /* margin: 10% !important; */
+  }
+  .body-paragraph {
+    font-size: 1em;
+  }
+  .footy {
+    padding-left: 0px;
+  }
+  .line {
+    width: 85vw !important;
+  }
+  h1 {
+    font-size: 30px;
+  }
+}
+
+.line {
+  margin-top: 20px;
+  height: 2px;
+  width: 100%;
+  background: repeating-linear-gradient(90deg, #33ff00 0 10px,#0000 0 15px);
 }
 
 @media only screen and (max-width: 630px) {
@@ -22,14 +52,4 @@
     font-size: 8px !important;
     letter-spacing: -0.5px !important;
   }
-  .line {
-    display: none !important;
-  }
-  .line-mobile {
-    display: inline !important;
-  }
-}
-
-.line-mobile {
-  display: none;
 }

@@ -6,6 +6,12 @@
 
  @font-face { font-family: Terminal; src: url('fonts/EpsonMxSeriesDmp-ZVRG8.ttf'); } 
 
+@media only screen and (orientation: portrait) {
+  #box2 h1:after {
+    left:315px !important;
+  }
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -66,7 +72,7 @@ body {
   width: 960px;
 }
 
-h1 {
+.headers {
   padding: none;
   font-size: 20px;
   color: #FFb000;
