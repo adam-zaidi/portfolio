@@ -119,7 +119,7 @@
 #huevo {
   padding: none;
   margin: none;
-  transform: translate(20px, 790px);
+  transform: translate(20px, 830px);
 }
 
 @media only screen and (orientation: portrait) {

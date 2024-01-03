@@ -12,6 +12,15 @@
   }
 }
 
+@keyframes fadeOutAnimation {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -147,4 +156,25 @@ li {
 
 .footnote-text {
   font-size: 15px;
+}
+
+.btn {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: #282828;
+  color: #33ff00;
+  border-radius: 5px;
+  border-color: #33ff00;
+  font-size: 20px;
+  margin-right:10px;
+}
+
+.btn:hover {
+  background-color: #33ff00;
+  color: #282828;
+}
+
+#copied-text {
+  display: none;
 }
